@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from './constant'
+import { INCREMENT, DECREMENT } from '../constant'
 // import store from './store'
 
 export const createIncrementAction = (data) => ({ type: INCREMENT, data })
