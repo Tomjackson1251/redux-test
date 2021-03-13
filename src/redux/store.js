@@ -1,5 +1,9 @@
 import { createStore, applyMiddleware } from 'redux'
-import countreducer from './reducers/count'
+import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
+import allReducer from './reducers/index'
 
-export default createStore(countreducer, applyMiddleware(thunk))
+export default createStore(
+  allReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+)
