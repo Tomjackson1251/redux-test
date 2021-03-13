@@ -19,6 +19,7 @@ export default class Demo extends Component {
       })
     }, 500)
   }
+  
   render() {
     return (
       <div>
