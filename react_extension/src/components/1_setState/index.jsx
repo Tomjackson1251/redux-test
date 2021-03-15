@@ -14,12 +14,12 @@ export default class Demo extends Component {
     // )
     setInterval(() => {
       this.setState((state, props) => {
-        //   console.log(state, props)
-        return { count: state.count + props.x }
+        console.log(state)
+        return { count: state.count * state.count }
       })
     }, 500)
   }
-  
+
   render() {
     return (
       <div>
